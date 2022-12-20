@@ -1,0 +1,251 @@
+<html>
+<head>
+<title> My first web-site </title> 
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One">
+<style>
+
+* {
+ box-sizing: border-box;
+ padding: 0;
+ margin: 0;
+}
+
+.forma input[type="submit"] {
+    background: #1762EE;
+}
+
+h1 { 
+color: #CEF0D4; 
+font-family: ‘Rouge Script’, 
+cursive; 
+font-size: 110px; 
+font-weight: normal; 
+line-height: 80px; 
+margin: 0 0 50px; 
+text-align: center; 
+text-shadow: 1px 1px 2px #082b34; 
+}
+
+#texte{
+font-size: 25;
+}
+
+label{
+font-size: 20px;
+}
+
+input{
+font-size: 50px;
+
+font-size: 1rem;
+border: 1px solid #bdbdbd;
+}
+
+input[type="text"] {
+    width: 150px;
+	height: 15px;
+}
+
+
+
+.fade {
+  position: relative;
+  width: 100%;
+  min-height: 60vh;
+  top: -25px;
+  background-image: linear-gradient(0deg, transparent, black 75%);
+  z-index: 1;
+}
+
+
+.star-wars {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 400px;
+  color: #feda4a;
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-size: 300%;
+  font-weight: 600;
+  letter-spacing: 6px;
+  line-height: 35%;
+  perspective: 20px;
+  text-align: justify;
+}
+
+
+
+
+.button{
+    color: #fff;
+    background-color:  #ff7400;
+    text-decoration: none;
+    padding: 14px 18px;
+    font-weight: 700;
+    transition: background-color 0.3s linear;
+}
+
+
+form {
+	position: relative;
+    max-width: 800px;
+    padding: 60px 50px;
+    margin: 0px auto 0;
+    background-image: url(123.png)
+    opacity: background-color 0.7;
+    background-size: cover;
+}
+
+legend{
+	width: 50px;
+	height: 50px;
+	
+}
+
+.prev{
+display: flex;
+flex-direction: row;
+}
+
+.first{
+display: flex;
+flex-direction: row;
+width: 1200px;
+height: 1200px;
+}
+
+
+body {
+ color: white;
+ text-align: center;
+ font-size: 24px;
+ line-height: 3;
+}
+
+header{
+background-color: rgb(49, 46, 46);
+}
+
+main {
+ background-image: url(fon.jpg);
+}
+
+footer {
+ background-image: url(fon.jpg);
+}
+
+.container {
+ display: flex;
+ flex-direction: column;
+}
+
+@media all and (min-width: 768px) {
+ .container {
+ flex-direction: row;
+ flex-wrap: wrap;
+ }
+ 
+ header,
+ footer {
+ width: 100%;
+ }
+ 
+ main {
+ flex: 1;
+ order: 2;
+ min-height: 80vh;
+ }
+
+ footer {
+ order: 4;
+ min-height: 80vh;
+ }
+}
+
+
+</style>
+
+<script>
+
+function sendMail()
+{
+    var body = document.getElementById("username").value;
+    window.location.href = "mailto:zaicev.1999@inbox.ru?subject=Планеты&body="+body;
+}
+
+</script>
+
+
+</head>
+
+
+
+<body>
+ <header>
+	<div class = 'prev'>
+		<img src = "planet.png" height = 20% width = 20% alt="">
+		<h1> Здесь вы можете узнать описание планет. </h1>
+	</div>
+ </header>
+ <main>
+	<div class = 'container'>
+		<div class = 'first'>
+			<img src = "Earth.png" height = 50% width = 50% alt="">
+			<section class="star-wars">
+			<div class="crawl">
+			<a id = 'texte'> Земля - третья планета от Солнца и единственный известный астрономический объект, на котором существует жизнь. В то время как большие объемы воды можно найти по всей Солнечной системе, только Земля поддерживает жидкую поверхностную воду. Около 71% поверхности Земли состоит из океана, который затмевает полярные льды, озера и реки Земли. Остальные 29% поверхности Земли - это суша, состоящая из континентов и островов. Поверхностный слой Земли образован несколькими медленно движущимися тектоническими плитами, которые взаимодействуют, образуя горные хребты, вулканы и землетрясения. </a>
+		</div>
+		</div>
+		</section>
+		<div class = 'first'>
+			<img src = "M.png" height = 50% width = 50% alt="">
+			<div class="fade"></div>
+			<section class="star-wars">
+			<div class="crawl">
+			<a id = 'texte'> Мерку́рий — наименьшая планета Солнечной системы и самая близкая к Солнцу. Названа в честь древнеримского бога торговли — быстрого Меркурия, поскольку она движется по небу быстрее других планет. Её период обращения вокруг Солнца составляет всего 87,97 земных суток — самый короткий среди всех планет Солнечной системы.
+
+Видимое расстояние Меркурия от Солнца, если смотреть с Земли, никогда не превышает 28°. Эта близость к Солнцу означает, что планету можно увидеть только в течение небольшого времени после захода или до восхода солнца, обычно в сумерках. В телескоп у Меркурия можно увидеть фазы, изменяющиеся от тонкого серпа до почти полного диска, как у Венеры и Луны, а иногда он проходит по диску Солнца. Период изменения фаз Меркурия равен синодическому периоду его обращения — примерно 116 дней. </a>
+			</div>
+			</section>
+		</div>
+		<div class = 'first'>
+			<img src = "Ma.png" height = 50% width = 50% alt="">
+			<section class="star-wars">
+			<div class="crawl">
+			<a id = 'texte'>Марс — четвёртая по удалённости от Солнца и седьмая по размеру планета Солнечной системы; масса планеты составляет 10,7 % массы Земли.Перейти к разделу «#Основные сведения» Названа в честь Марса — древнеримского бога войны, соответствующего древнегреческому Аресу.Перейти к разделу «#В античной мифологии» Также Марс называют «красной планетой» из-за красноватого оттенка поверхности, придаваемого ей минералом маггемитом — γ-оксидом железа(III).Перейти к разделу «#Грунт»
+
+Марс — планета земной группы с разреженной атмосферой (давление на поверхности в 160 раз меньше земного).Перейти к разделу «#Атмосфера и климат» Особенностями поверхностного рельефа Марса можно считать ударные кратеры наподобие лунных, а также вулканы, долины, пустыни и полярные ледниковые шапки наподобие земных.</a>
+		</div>
+		</section>
+		</div>
+		<div class = 'first'>
+				<img src = "N.png" height = 50% width = 50% alt="">
+		<section class="star-wars">
+			<div class="crawl">
+
+		<a id = 'texte'> Непту́н — восьмая и самая дальняя от Солнца планета Солнечной системы. Его масса превышает массу Земли в 17,2 раза и является третьей среди планет Солнечной системы, а по экваториальному диаметру Нептун занимает четвёртое место, превосходя Землю в 3,9 раза[9]. Планета названа в честь Нептуна — римского бога морей[10].
+
+Обнаруженный 23 сентября 1846 года[11], Нептун стал первой планетой, открытой благодаря математическим расчётам[12]. Обнаружение непредсказуемых изменений орбиты Урана породило гипотезу о неизвестной планете, гравитационным возмущающим влиянием которой они и обусловлены.</a>
+		</section>
+		</div>
+	</div>
+	</div>
+ </main>
+ <footer>
+	<form>
+		<fieldset>
+		<h3>Если вы хотите дополнить сведения о планетах, напишите нам.</h3>
+            <label for="username">Ваш текст: </label>
+            <input type="text" id="username">
+			<button type="button" onclick="sendMail()"> Send </button>
+		</fieldset>
+    </form>
+ </footer>
+
+
+
+</body>
+
+
+
+</html>

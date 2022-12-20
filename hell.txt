@@ -1,0 +1,12 @@
+<html>
+<title> My first web-site </title 
+<body>
+<img src = "hw.jpg" width = 50% height = 50%>
+</body>
+
+
+
+
+
+
+</html>
